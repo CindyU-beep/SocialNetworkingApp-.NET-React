@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-
+//endpoints for API
 namespace API.Controllers;
 
 [ApiController]

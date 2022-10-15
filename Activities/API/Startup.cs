@@ -44,9 +44,9 @@ namespace API
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "WebAPIv5 v1"));
             }
 
-            app.UseHttpsRedirection();
+           // app.UseHttpsRedirection();
 
-            app.UseRouting();
+            app.UseRouting(); //route to appropriate API controller
 
             app.UseAuthorization();
 
