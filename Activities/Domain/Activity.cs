@@ -7,7 +7,7 @@ namespace Domain
 {
     public class Activity
     {
-        public Guid Id { get; set; } //generate from server or client side
+        public Guid Id { get; set; } //Guid generate from server or client side; key for data
 
         public string Title {get; set;}
         public DateTime Date {get; set;}
