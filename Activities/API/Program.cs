@@ -14,7 +14,7 @@ namespace API
 {
     public class Program
     {
-        public static void Main(string[] args)
+        public static async Task Main(string[] args) //asyn method, returns a task
         {
             var host = CreateHostBuilder(args).Build();
             using var scope = host.Services.CreateScope(); //after method complete, scope is disposed of
@@ -24,8 +24,8 @@ namespace API
             try
             {
                 var context = services.GetRequiredService<DataContext>();
-                context.Database.Migrate(); //creates the database if not already exist
-                
+                await context.Database.MigrateAsync(); //creates the database if not already exist
+                await Seed.SeedData(context);
             }
             catch (Exception e)
             {
@@ -34,7 +34,7 @@ namespace API
             }
 
             //run the application
-            host.Run();
+            await host.RunAsync();
 
         }
 
