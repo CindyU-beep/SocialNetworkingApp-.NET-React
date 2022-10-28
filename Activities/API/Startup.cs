@@ -3,7 +3,7 @@ using Microsoft.OpenApi.Models;
 using Persistence;
 using MediatR;
 using Application.Activities;
-//added via cmd: dotnet add package Microsoft.EntityFrameworkCore.Design --version 6.0.0
+using API.Controllers.Core;
 
 namespace API
 {
@@ -37,6 +37,7 @@ namespace API
             });
 
             services.AddMediatR(typeof(List.Handler).Assembly); //tells mediator where to find handlers
+            services.AddAutoMapper(typeof(MappingProfiles).Assembly);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
