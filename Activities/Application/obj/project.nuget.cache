@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "i7Vk5U5vWfz27kA12tRSYExBr5zbMNXNdIgWr3AqmHmM5rElLBMTouOlCcBHd2gqEcxXf5j6pTdbXDNSQnPBHA==",
+  "dgSpecHash": "/FDPylUDbhLxuA1dGOQx0Qt6Q9LWjGqT0srJFfqk3ar4aZk5DXbvJazdvIVTCBhbi6Jtz135A3ix7HPc3iMrPg==",
   "success": true,
   "projectFilePath": "C:\\Users\\cindy\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\Application\\Application.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\cindy\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
+    "C:\\Users\\cindy\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\cindy\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.0.0\\mediatr.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "C:\\Users\\cindy\\.nuget\\packages\\microsoft.data.sqlite.core\\6.0.0\\microsoft.data.sqlite.core.6.0.0.nupkg.sha512",
     "C:\\Users\\cindy\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.0\\microsoft.entityframeworkcore.6.0.0.nupkg.sha512",
     "C:\\Users\\cindy\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.0\\microsoft.entityframeworkcore.abstractions.6.0.0.nupkg.sha512",
