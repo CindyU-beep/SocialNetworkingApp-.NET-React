@@ -1,12 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "/FDPylUDbhLxuA1dGOQx0Qt6Q9LWjGqT0srJFfqk3ar4aZk5DXbvJazdvIVTCBhbi6Jtz135A3ix7HPc3iMrPg==",
+  "dgSpecHash": "mgi45NdA5Vt7ZlTed5V5x9sYLByfupj6QnhR5fiwD8KiY6ksioJrIveI0cPwodYJDr+Mz3k/rc4nWZtZuRFNnA==",
   "success": true,
   "projectFilePath": "C:\\Users\\cindy\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\Application\\Application.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\cindy\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
+    "C:\\Users\\cindy\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "C:\\Users\\cindy\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
     "C:\\Users\\cindy\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
     "C:\\Users\\cindy\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.0.0\\mediatr.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
+    "C:\\Users\\cindy\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\cindy\\.nuget\\packages\\microsoft.data.sqlite.core\\6.0.0\\microsoft.data.sqlite.core.6.0.0.nupkg.sha512",
     "C:\\Users\\cindy\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.0\\microsoft.entityframeworkcore.6.0.0.nupkg.sha512",
     "C:\\Users\\cindy\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.0\\microsoft.entityframeworkcore.abstractions.6.0.0.nupkg.sha512",
