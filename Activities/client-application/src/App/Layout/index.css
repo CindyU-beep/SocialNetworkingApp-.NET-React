@@ -1,7 +1,20 @@
 body {
-  background-color: #eeebfd;
+  background-image: url("../../../public/assets/background.jpg") !important;
+  background-size: contain !important;
 }
 
+
+
 .ui.inverted.top.fixed.menu {
-  background-color: '#9381FF';
+  background-image: linear-gradient(
+    160deg,
+    #173f1c 10%,
+    #2e6034 60%,
+    #177323 80%
+  ) !important;
+}
+
+.ui.menu a.ui.inverted.button {
+  margin-left: 0.5em;
+  
 }
