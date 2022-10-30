@@ -1,23 +1,25 @@
 import React, { useEffect, useState } from 'react';
-import './App.css';
 import axios from 'axios';
-import { List, Header } from 'semantic-ui-react';
+import { List, Container } from 'semantic-ui-react';
+import { Activity } from '../Models/activity';
+import NavBar from './NavBar';
+
 
 function App() {
-  const[activities, setActivities] = useState([])
+  const[activities, setActivities] = useState<Activity[]>([])
 
   useEffect(()=> { //
     axios.get('http://localhost:5000/api/activities').then(response =>{
-      console.log(response);
       setActivities(response.data);
     })
   }, [] ) //ensures only runs once; gets activities once to prevent infinite loop
   
   return (
-    <div>
-      <Header as='h2' icon='users' content='Activities' />
+    <div className='body'>
+      <NavBar/>
+      <Container style={{marginTop: '7em'}}/>
         <List>
-          {activities.map((activity: any) => (
+          {activities.map((activity) => ( //typeof activity
             <List.Item key={activity.id}>
               {activity.title}
             </List.Item>

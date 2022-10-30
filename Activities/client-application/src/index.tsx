@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client'; //webapp (ReactNative for mobile)
-import './index.css';
-import App from './App';
+import './App/Layout/index.css'
+import App from './App/Layout/App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
