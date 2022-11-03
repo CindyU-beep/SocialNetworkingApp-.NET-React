@@ -6,13 +6,16 @@ import ActivityDashboard from '../../AppFeatures/activities/dashboard/ActivityDa
 import LoadingComponent from './LoadingComponent';
 import { useStore } from '../Stores/store';
 import { observer } from 'mobx-react-lite';
+import { Route } from 'react-router-dom';
+import HomePage from '../../AppFeatures/home/HomePage';
+import ActivityForm from '../../AppFeatures/activities/form/ActivityForm';
 
 function App() {
   const{activityStore}=useStore();//MobX to manage state
 
   useEffect(()=> {
     activityStore.loadActivities();
-  }, [] ) //ensures only runs once; gets activities once to prevent infinite loop
+  }, [activityStore] ) //ensures only runs once; gets activities once to prevent infinite loop
 
 
   if (activityStore.loadingInitial) return <LoadingComponent content='Loading. . .'/>
@@ -21,7 +24,9 @@ function App() {
     <>
       <NavBar/>
       <Container style={{marginTop: '7em'}}>
-        <ActivityDashboard />
+        <Route exact path='/' component={HomePage}/>
+        <Route path='/activities' component={ActivityDashboard}/>
+        <Route path='/createActivity' component={ActivityForm}/>
       </Container>
     </>
   );

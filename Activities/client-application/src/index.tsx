@@ -4,6 +4,7 @@ import './App/Layout/index.css'
 import App from './App/Layout/App';
 import reportWebVitals from './reportWebVitals';
 import { store, StoreContext } from './App/Stores/store';
+import { BrowserRouter } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -11,8 +12,10 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <StoreContext.Provider value={store}>
-        <App />
+    <BrowserRouter>
+      <App />
 
+    </BrowserRouter>
   </StoreContext.Provider>
 );
 //Store context provides context 
