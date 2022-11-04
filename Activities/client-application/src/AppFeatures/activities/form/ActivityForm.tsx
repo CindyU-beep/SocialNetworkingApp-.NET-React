@@ -1,26 +1,46 @@
 import { Form, Segment, Button} from "semantic-ui-react";
-import { ChangeEvent, useState } from 'react';
+import { ChangeEvent, useEffect, useState } from 'react';
 import { useStore } from "../../../App/Stores/store";
 import { observer } from "mobx-react-lite";
+import { Link, useHistory, useParams } from "react-router-dom";
+import LoadingComponent from "../../../App/Layout/LoadingComponent";
+import {v4 as uuid} from 'uuid';
+
 
 export default observer(function ActivityForm(){
+    const history = useHistory();
     const{activityStore} = useStore();
-    const{selectedActivity, formClose, createActivity, updateActivity, loading} = activityStore;
-    
-    const initialState = selectedActivity ?? {
-        id: '',
-        title: '',
-        category: '',
-        description: '',
-        date:'',
-        city: '',
-        venue:'',
-    }
+    const{loadActivity, createActivity, loading, loadingInitial, updateActivity} = activityStore;
+    const{id} = useParams<{id:string}>();
+    const [activity, setActivity] = useState({
+        //set inital value to empty fields
+            id: '',
+            title: '',
+            category: '',
+            description: '',
+            date:'',
+            city: '',
+            venue:'',
+        }
+    );
 
-    const [activity, setActivity] = useState(initialState);
+    useEffect(()=>{
+        if(id) loadActivity(id).then(activity => setActivity(activity!)) //set state of activity
+    }, [id,loadActivity]); //dependencies; only execute code once (i.e. rerender activities if change)
+
+    if(loadingInitial) return <LoadingComponent/>
 
     function SubmitFormHandler(){
-        activity.id ? updateActivity(activity) : createActivity(activity)
+        if(activity.id.length === 0){ //if len 0, create new activity 
+            let newActivity ={
+                ...activity,
+                id: uuid()
+            };
+            createActivity(newActivity).then(()=> history.push(`/activities/${newActivity.id}`));
+        } else { //update existing activity
+            updateActivity(activity).then(() =>history.push(`/activities/${activity.id}`));
+
+        }
     }
 
     function FormChangeHandler(event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>){
@@ -39,7 +59,7 @@ export default observer(function ActivityForm(){
                 <Form.Input placeholder='Venue'value={activity.venue} name='venue' onChange={FormChangeHandler} />
 
                 <Button loading={loading} onClick={SubmitFormHandler} floated='right' positive type='submit' content='Submit'></Button>
-                <Button onClick={formClose} floated='right' type='button' content='Cancel'></Button>
+                <Button as={Link} to='/activities' floated='right' type='button' content='Cancel'></Button>
 
             </Form>
             

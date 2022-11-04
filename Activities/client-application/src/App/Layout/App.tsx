@@ -6,30 +6,38 @@ import ActivityDashboard from '../../AppFeatures/activities/dashboard/ActivityDa
 import LoadingComponent from './LoadingComponent';
 import { useStore } from '../Stores/store';
 import { observer } from 'mobx-react-lite';
-import { Route } from 'react-router-dom';
+import { Route, useLocation } from 'react-router-dom';
 import HomePage from '../../AppFeatures/home/HomePage';
 import ActivityForm from '../../AppFeatures/activities/form/ActivityForm';
 import ActivityDetails from '../../AppFeatures/activities/details/ActivityDetails';
 
 function App() {
   const{activityStore}=useStore();//MobX to manage state
+  const location = useLocation();
 
   useEffect(()=> {
     activityStore.loadActivities();
   }, [activityStore] ) //ensures only runs once; gets activities once to prevent infinite loop
 
 
-  if (activityStore.loadingInitial) return <LoadingComponent content='Loading. . .'/>
+  if (activityStore.loadingInitial) return <LoadingComponent />
   
   return (
     <>
-      <NavBar/>
-      <Container style={{marginTop: '7em'}}>
-        <Route exact path='/' component={HomePage}/>
-        <Route exact path='/activities' component={ActivityDashboard}/>
-        <Route path='/activities/:id' component={ActivityDetails}/>
-        <Route path='/createActivity' component={ActivityForm}/>
-      </Container>
+      <Route exact path='/' component={HomePage}/>
+      <Route 
+        path={'/(.+)'}
+        render={()=>(
+          <>
+            <NavBar/>
+            <Container style={{marginTop: '7em'}}>
+              <Route exact path='/activities' component={ActivityDashboard}/>
+              <Route path='/activities/:id' component={ActivityDetails}/>
+              <Route key={location.key} path={['/createActivity','/manage/:id']} component={ActivityForm}/>
+            </Container>
+          </>
+        )}
+      />
     </>
   );
 }
