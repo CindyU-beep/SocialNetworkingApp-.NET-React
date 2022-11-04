@@ -39,6 +39,29 @@ export default class ActivityStore{
         }
     }
 
+    loadActivity = async(id: string) => {
+        let activity = this.getActivity(id);
+        if(activity){
+            this.selectedActivity=activity;
+        } else {
+            this.loadingInitial=true;
+            try{
+                activity = await agent.Activities.details(id);
+            } catch(error){
+                console.log(error)
+            }
+        }
+    }
+    private getActivity(id: string){
+        return this.activityRegistry.get(id)
+    }
+
+    private setActivity = (activity: Activity) =>{
+        activity.date = 
+    }
+
+    }
+
     setLoadingInitial = (state: boolean) => {
         this.loadingInitial = state;
     }
@@ -118,5 +141,7 @@ export default class ActivityStore{
             })
         }
     }
+
+
 }
 
