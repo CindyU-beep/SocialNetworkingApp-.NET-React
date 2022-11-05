@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client'; //webapp (ReactNative for mobile)
 import './App/Layout/index.css'
+import 'react-calendar/dist/Calendar.css';
 import App from './App/Layout/App';
 import reportWebVitals from './reportWebVitals';
 import { store, StoreContext } from './App/Stores/store';
 import { BrowserRouter } from 'react-router-dom';
-
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
