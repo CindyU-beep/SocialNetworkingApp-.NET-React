@@ -1,6 +1,6 @@
+using Application.Activities;
 using Domain;
 using Microsoft.AspNetCore.Mvc;
-using Application.Activities;
 
 namespace API.Controllers
 {
@@ -8,14 +8,16 @@ namespace API.Controllers
     {
 
         [HttpGet]
-        public async Task<ActionResult<List<Activity>>> GetActivities()
+        public async Task<IActionResult> GetActivities()
         {
-            return await Mediator.Send(new List.Query());
+            return ResultHandler(await Mediator.Send(new List.Query()));
         }
         
         [HttpGet("{id}")] 
-        public async Task<ActionResult<Activity>> GetActivity(Guid id){
-            return await Mediator.Send(new Details.Query{Id = id});
+        public async Task<IActionResult> GetActivity(Guid id){
+
+            return ResultHandler(await Mediator.Send(new Details.Query{Id = id}));
+        
         }
 
         //NEW ENDPOINTS 
@@ -24,7 +26,7 @@ namespace API.Controllers
         public async Task<IActionResult> CreateActivity(Activity activity) // looks inside body of activity to retrieve data
         //IActionResult gives access to http response type 
         {
-            return Ok(await Mediator.Send(new Create.Command {Activity = activity}));
+            return ResultHandler(await Mediator.Send(new Create.Command {Activity = activity}));
         }
 
         [HttpPut("{id}")] //EDIT ACTIVITY

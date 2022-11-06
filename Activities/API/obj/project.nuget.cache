@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "gGw1dAScgQGltKCYTH5xrpn1PK1jwAoRbx3Ze6JIQCGJSdOJJx5pCnR09RzhT9W7aCli48XhQJdafkQhrBpbag==",
+  "dgSpecHash": "DI+RjEUz9lIDC9V6UO2CcvQGnh7tXVczAPBqxdNvySgVvxqOsTiXAHZlwzBTWLE5ySyL6GfQlQpQq4wZuTtDgA==",
   "success": true,
   "projectFilePath": "C:\\Users\\cindy\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\cindy\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\cindy\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
+    "C:\\Users\\cindy\\.nuget\\packages\\fluentvalidation\\11.2.2\\fluentvalidation.11.2.2.nupkg.sha512",
+    "C:\\Users\\cindy\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.2.2\\fluentvalidation.aspnetcore.11.2.2.nupkg.sha512",
+    "C:\\Users\\cindy\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.2.1\\fluentvalidation.dependencyinjectionextensions.11.2.1.nupkg.sha512",
     "C:\\Users\\cindy\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\cindy\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
     "C:\\Users\\cindy\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",

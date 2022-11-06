@@ -1,4 +1,7 @@
 using API.Extensions;
+using Application.Activities;
+using FluentValidation;
+using FluentValidation.AspNetCore;
 
 namespace API
 {
@@ -14,9 +17,11 @@ namespace API
         {
 
             services.AddControllers();
+            services.AddFluentValidationAutoValidation();
+            services.AddValidatorsFromAssemblyContaining<Create>();
             services.AddAppServices(_config);
             
-        }
+            }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

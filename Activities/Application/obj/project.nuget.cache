@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "mgi45NdA5Vt7ZlTed5V5x9sYLByfupj6QnhR5fiwD8KiY6ksioJrIveI0cPwodYJDr+Mz3k/rc4nWZtZuRFNnA==",
+  "dgSpecHash": "3QbuD+BKmGmNwrGs+MczitrdncQroxZZzGv9vnxcCsv0RRDtMj4bq7BjrN59PqC/TuEMytj0L3J+ikJ4PX3EfA==",
   "success": true,
   "projectFilePath": "C:\\Users\\cindy\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\Application\\Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\cindy\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\cindy\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
+    "C:\\Users\\cindy\\.nuget\\packages\\fluentvalidation\\11.2.2\\fluentvalidation.11.2.2.nupkg.sha512",
     "C:\\Users\\cindy\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
     "C:\\Users\\cindy\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
     "C:\\Users\\cindy\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.0.0\\mediatr.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",

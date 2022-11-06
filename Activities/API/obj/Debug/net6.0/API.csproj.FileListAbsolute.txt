@@ -62,3 +62,6 @@ C:\Users\cindy\Documents\GitHub\SocialNetworkingApp-.NET-React\Activities\API\bi
 C:\Users\cindy\Documents\GitHub\SocialNetworkingApp-.NET-React\Activities\API\bin\Debug\net6.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\cindy\Documents\GitHub\SocialNetworkingApp-.NET-React\Activities\API\bin\Debug\net6.0\AutoMapper.dll
 C:\Users\cindy\Documents\GitHub\SocialNetworkingApp-.NET-React\Activities\API\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\cindy\Documents\GitHub\SocialNetworkingApp-.NET-React\Activities\API\bin\Debug\net6.0\FluentValidation.dll
+C:\Users\cindy\Documents\GitHub\SocialNetworkingApp-.NET-React\Activities\API\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
+C:\Users\cindy\Documents\GitHub\SocialNetworkingApp-.NET-React\Activities\API\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
