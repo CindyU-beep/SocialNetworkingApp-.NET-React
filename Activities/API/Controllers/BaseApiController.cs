@@ -14,7 +14,11 @@ namespace API.Controllers
         protected IMediator Mediator => _mediator ??= HttpContext.RequestServices.GetService<IMediator>();
 
         protected ActionResult ResultHandler<T>(Result<T> result){
-                        //if activity found, return success
+            //if null, return not found
+            if(result == null){
+                return NotFound();
+            }
+            //if activity found, return success
             if(result.IsSuccess && result.Value != null){
                 return Ok(result.Value);
             }

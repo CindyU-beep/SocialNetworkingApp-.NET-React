@@ -5,7 +5,7 @@ namespace API
 {
     public class Program
     {
-        public static async Task Main(string[] args) //asyn method, returns a task
+        public static async Task Main(string[] args) //async method, returns a task
         {
             var host = CreateHostBuilder(args).Build();
             using var scope = host.Services.CreateScope(); //after method complete, scope is disposed of
