@@ -1,15 +1,11 @@
 body {
-  background-image: url("../../../public/assets/background.jpg") !important;
+  background-image: url("../../../public/assets/background.svg") !important;
   background-size: contain !important;
+  background-color: #1a2747 !important;
 }
 /*Navbar styling*/
 .ui.inverted.top.fixed.menu {
-  background-image: linear-gradient(
-    160deg,
-    #173f1c 10%,
-    #2e6034 60%,
-    #177323 80%
-  ) !important;
+  background-color: #02bb6e !important;
 }
 
 .ui.menu a.ui.inverted.button {
@@ -28,8 +24,10 @@ body {
 .masthead {
   display: flex;
   align-items: center;
-  background-image: url("../../../public/assets/background.jpg") !important;
+  background-image: url("../../../public/assets/background.svg") !important;
+  background-color: #1a2747 !important;
   background-size: contain !important;
+
   height: 100vh;
   
 }
@@ -44,22 +42,29 @@ body {
 
 .masthead h1.ui.header {
   font-size: 4em;
-  font-weight: normal;
-  color:black;
+  font-weight: 900;
 
 }
 
 .masthead h2 {
   font-size: 1.7em;
   font-weight: normal;
-  color:black;
 }
 
 .masthead h2.ui.inverted.header {
-  color:black;
+  color:white;
 }
 
 .masthead a.ui.huge.inverted.button {
-  color: black;
-  border: black;
+  color: white;
+  border: white;
+}
+
+
+.ui.sub.header {
+  color: white;
+}
+
+.h1.ui.header{
+  color: white;
 }

@@ -1,21 +1,19 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
-import { Container, Header, Segment, Image, Button } from 'semantic-ui-react';
+import { Container, Header, Segment, Button } from 'semantic-ui-react';
 
 export default function HomePage(){
     return (
        <Segment inverted textAlign='center' vertical className='masthead'>
             <Container text>
                 <Header as='h1' inverted>
-                    <Image size='massive' src="/assets/logo.png" alt='logo' style={{marginBottom:12}}/>
-                    My Social Media App
+                    Codess Community
                 </Header>
-                <Header as='h2' inverted content='Welcome to my social media app'/>
-                <Button as={Link} to='/activities' size='huge' inverted>
-                    See all the activities
+                <Header as='h2' inverted content='Welcome to the Codess Women in Tech Community'/>
+                
+                <Button as={Link} to='/activities' size='huge' inverted className="terminal icon" style={{marginRight:'10px'}}>
+                    <p><i className="terminal icon" />  Start Journey</p>
                 </Button>
             </Container>
-
        </Segment>
         
     )

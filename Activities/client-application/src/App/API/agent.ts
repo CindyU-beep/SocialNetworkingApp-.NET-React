@@ -1,6 +1,5 @@
 //requests for API
 import axios, { AxiosError, AxiosResponse } from 'axios';
-import { config } from 'process';
 import { toast } from 'react-toastify';
 import { history } from '../..';
 import { Activity } from '../Models/activity';
@@ -38,7 +37,7 @@ axios.interceptors.response.use(async response => { //loading delay logic
                 throw modalStateErrors.flat(); 
             }
             break;
-            
+
         case 401: 
             toast.error('unauthorised');
             break;

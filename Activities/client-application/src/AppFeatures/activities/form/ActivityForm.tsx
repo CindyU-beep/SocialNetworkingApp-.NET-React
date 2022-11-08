@@ -4,8 +4,7 @@ import { useStore } from "../../../App/Stores/store";
 import { observer } from "mobx-react-lite";
 import { Link, useHistory, useParams } from "react-router-dom";
 import LoadingComponent from "../../../App/Layout/LoadingComponent";
-import {v4 as uuid} from 'uuid';
-
+import { Formik } from "formik";
 
 export default observer(function ActivityForm(){
     const history = useHistory();
@@ -30,38 +29,45 @@ export default observer(function ActivityForm(){
 
     if(loadingInitial) return <LoadingComponent/>
 
-    function SubmitFormHandler(){
-        if(activity.id.length === 0){ //if len 0, create new activity 
-            let newActivity ={
-                ...activity,
-                id: uuid()
-            };
-            createActivity(newActivity).then(()=> history.push(`/activities/${newActivity.id}`));
-        } else { //update existing activity
-            updateActivity(activity).then(() =>history.push(`/activities/${activity.id}`));
+    // function SubmitFormHandler(){
+    //     if(activity.id.length === 0){ //if len 0, create new activity 
+    //         let newActivity ={
+    //             ...activity,
+    //             id: uuid()
+    //         };
+    //         createActivity(newActivity).then(()=> history.push(`/activities/${newActivity.id}`));
+    //     } else { //update existing activity
+    //         updateActivity(activity).then(() =>history.push(`/activities/${activity.id}`));
 
-        }
-    }
+    //     }
+    // }
 
-    function FormChangeHandler(event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>){
-        const {name, value} = event.target;
-        setActivity({...activity, [name]: value})
-    }
+    // function FormChangeHandler(event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>){
+    //     const {name, value} = event.target;
+    //     setActivity({...activity, [name]: value})
+    // }
+
+    
+
 
     return (
         <Segment clearing>
-            <Form onSubmit={SubmitFormHandler} autoComplete='off'>
-                <Form.Input placeholder='Title' value={activity.title} name='title' onChange={FormChangeHandler}/>
-                <Form.TextArea placeholder='Description' value={activity.description} name='description' onChange={FormChangeHandler} />
-                <Form.Input placeholder='Category'value={activity.category} name='category' onChange={FormChangeHandler} />
-                <Form.Input type='date' placeholder='Date' value={activity.date} name='date' onChange={FormChangeHandler}/>
-                <Form.Input placeholder='City'value={activity.city} name='city' onChange={FormChangeHandler} />
-                <Form.Input placeholder='Venue'value={activity.venue} name='venue' onChange={FormChangeHandler} />
+            <Formik enableReinitialize initialValues={activity} onSubmit={values => console.log(values)}> 
+                {({values: activity, handleChange, handleSubmit}) =>(
+                <Form onSubmit={handleSubmit} autoComplete='off'>
+                    <Form.Input placeholder='Title' value={activity.title} name='title' onChange={handleChange}/>
+                    <Form.TextArea placeholder='Description' value={activity.description} name='description' onChange={handleChange} />
+                    <Form.Input placeholder='Category'value={activity.category} name='category' onChange={handleChange} />
+                    <Form.Input type='date' placeholder='Date' value={activity.date} name='date' onChange={handleChange}/>
+                    <Form.Input placeholder='City'value={activity.city} name='city' onChange={handleChange} />
+                    <Form.Input placeholder='Venue'value={activity.venue} name='venue' onChange={handleChange} />
 
-                <Button loading={loading} onClick={SubmitFormHandler} floated='right' positive type='submit' content='Submit'></Button>
-                <Button as={Link} to='/activities' floated='right' type='button' content='Cancel'></Button>
+                    <Button loading={loading} floated='right' positive type='submit' content='Submit'></Button>
+                    <Button as={Link} to='/activities' floated='right' type='button' content='Cancel'></Button>
 
-            </Form>
+                </Form>
+                )}
+            </Formik>
             
         </Segment>
     );

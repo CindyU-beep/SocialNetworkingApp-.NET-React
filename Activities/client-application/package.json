@@ -14,6 +14,7 @@
     "@types/react-dom": "^18.0.8",
     "axios": "^0.26.1",
     "bootstrap": "^5.2.0-beta1",
+    "formik": "^2.2.9",
     "history": "^4.10.1",
     "mobx": "^6.6.2",
     "mobx-react-lite": "^3.4.0",

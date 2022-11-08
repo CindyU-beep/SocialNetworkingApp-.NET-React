@@ -8,8 +8,8 @@ export default function NavBar(){
         <Menu inverted fixed="top">
             <Container>
                 <Menu.Item as={NavLink} to='/' header>
-                    <img src ="/assets/logo.png" alt="logo" style={{marginRight:'10px'}}/>
-                    My Social Networking App
+                    <i className="rocket icon"></i>
+                    Codess Community
                 </Menu.Item>
                 <Menu.Item as={NavLink} to='/activities' name = 'Activities'/>
                 <Menu.Item as={NavLink} to='/ErrorHandling' name = 'Errors'/>

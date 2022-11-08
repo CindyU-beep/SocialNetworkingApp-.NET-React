@@ -1,6 +1,8 @@
 import { observer } from 'mobx-react-lite';
+import { Link } from 'react-router-dom';
 import {Button, Header, Item, Segment, Image} from 'semantic-ui-react'
 import { Activity } from '../../../App/Models/activity';
+import ActivityForm from '../form/ActivityForm';
 
 const activityImageStyle = {
     filter: 'brightness(30%)'
@@ -45,9 +47,9 @@ export default observer (function ActivityDetailHeader({activity}: Props) {
             <Segment clearing attached='bottom'>
                 <Button color='green'>Join Activity</Button>
                 <Button>Cancel attendance</Button>
-                <Button color='blue' floated='right'>
+                <Button as={Link} to={`/manage/${activity.id}`} color='blue' floated='right'>
                     Manage Event
-                </Button>
+                </Button >
             </Segment>
         </Segment.Group>
     )

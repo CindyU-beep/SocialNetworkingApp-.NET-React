@@ -12,7 +12,7 @@ export default observer (function ActivityList() {
         <>
             {groupedActivities.map(([group, activities]) =>
             <Fragment key={group}>
-                <Header sub color='black'>{group} </Header>
+                <Header sub >{group} </Header>
                 {activities.map((activity) => ( //typeof activity
                     <ActivityListOfItems key={activity.id} activity={activity} />
                 ))}
