@@ -68,3 +68,10 @@ body {
 .h1.ui.header{
   color: white;
 }
+
+/*Date Picker in Create Activity */
+
+.react-datepicker-wrapper{
+  width:100%;
+}
+
