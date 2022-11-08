@@ -17,6 +17,7 @@ namespace API.Controllers
             //if null, return not found
             if(result == null){
                 return NotFound();
+
             }
             //if activity found, return success
             if(result.IsSuccess && result.Value != null){

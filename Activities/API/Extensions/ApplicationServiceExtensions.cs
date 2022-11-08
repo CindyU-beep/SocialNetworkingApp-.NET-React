@@ -5,7 +5,6 @@ using Persistence;
 using Microsoft.EntityFrameworkCore;
 using MediatR;
 using API.Controllers.Core;
-using System.Collections.Generic;
 using Application.Activities;
 
 namespace API.Extensions

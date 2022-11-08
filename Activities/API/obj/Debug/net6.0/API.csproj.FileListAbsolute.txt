@@ -65,3 +65,16 @@ C:\Users\cindy\Documents\GitHub\SocialNetworkingApp-.NET-React\Activities\API\bi
 C:\Users\cindy\Documents\GitHub\SocialNetworkingApp-.NET-React\Activities\API\bin\Debug\net6.0\FluentValidation.dll
 C:\Users\cindy\Documents\GitHub\SocialNetworkingApp-.NET-React\Activities\API\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
 C:\Users\cindy\Documents\GitHub\SocialNetworkingApp-.NET-React\Activities\API\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\cindy\Documents\GitHub\SocialNetworkingApp-.NET-React\Activities\API\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\cindy\Documents\GitHub\SocialNetworkingApp-.NET-React\Activities\API\bin\Debug\net6.0\Microsoft.Extensions.Configuration.dll
+C:\Users\cindy\Documents\GitHub\SocialNetworkingApp-.NET-React\Activities\API\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\cindy\Documents\GitHub\SocialNetworkingApp-.NET-React\Activities\API\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\cindy\Documents\GitHub\SocialNetworkingApp-.NET-React\Activities\API\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\cindy\Documents\GitHub\SocialNetworkingApp-.NET-React\Activities\API\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\Users\cindy\Documents\GitHub\SocialNetworkingApp-.NET-React\Activities\API\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\cindy\Documents\GitHub\SocialNetworkingApp-.NET-React\Activities\API\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\cindy\Documents\GitHub\SocialNetworkingApp-.NET-React\Activities\API\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\cindy\Documents\GitHub\SocialNetworkingApp-.NET-React\Activities\API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\cindy\Documents\GitHub\SocialNetworkingApp-.NET-React\Activities\API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\cindy\Documents\GitHub\SocialNetworkingApp-.NET-React\Activities\API\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\cindy\Documents\GitHub\SocialNetworkingApp-.NET-React\Activities\API\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
