@@ -47,13 +47,15 @@ namespace API.Controllers
         [HttpPost("register")]
 
         public async Task<ActionResult<UserDTO>> Register(RegisterDTO registerDTO){
-            //if email already exists, return bad request error
+            //if email already exists, return validation problem error in string array format
             if(await _userManager.Users.AnyAsync(x=> x.Email == registerDTO.Email)){
-                return BadRequest("Email already in use");
+                ModelState.AddModelError("email", "Email already in use");
+                return ValidationProblem();
             } 
-            //if username already exists, return bad request error
+            //if username already exists, return validation error problem error in string array format
             if(await _userManager.Users.AnyAsync(x=> x.UserName == registerDTO.Username)){
-                return BadRequest("Username already in use");
+                ModelState.AddModelError("username", "Username already in use");
+                return ValidationProblem();
             }
 
             // new user requirements
