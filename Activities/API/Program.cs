@@ -1,13 +1,11 @@
 using Persistence;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.Identity;
-using Domain;
 
 namespace API
 {
     public class Program
     {
-        public static async Task Main(string[] args) //async method, returns a task
+        public static async Task Main(string[] args) //asyn method, returns a task
         {
             var host = CreateHostBuilder(args).Build();
             using var scope = host.Services.CreateScope(); //after method complete, scope is disposed of
@@ -17,9 +15,8 @@ namespace API
             try
             {
                 var context = services.GetRequiredService<DataContext>();
-                var userManager = services.GetRequiredService<UserManager<AppUser>>();
                 await context.Database.MigrateAsync(); //creates the database if not already exist
-                await Seed.SeedData(context, userManager); //seeds users into database 
+                await Seed.SeedData(context);
             }
             catch (Exception e)
             {
