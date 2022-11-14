@@ -5,8 +5,9 @@ using Persistence;
 using Microsoft.EntityFrameworkCore;
 using MediatR;
 using API.Controllers.Core;
-using System.Collections.Generic;
 using Application.Activities;
+using Application.Interfaces;
+using Infrastructure.Security;
 
 namespace API.Extensions
 {
@@ -34,6 +35,7 @@ namespace API.Extensions
 
             services.AddMediatR(typeof(List.Handler).Assembly); //tells mediator where to find handlers
             services.AddAutoMapper(typeof(MappingProfiles).Assembly);
+            services.AddScoped<UsernameAccessor, UserAccessor>(); //add username accessor from infrastructure
 
             return services;
         }

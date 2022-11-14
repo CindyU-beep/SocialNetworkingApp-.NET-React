@@ -6,29 +6,60 @@ import ActivityDashboard from '../../AppFeatures/activities/dashboard/ActivityDa
 import LoadingComponent from './LoadingComponent';
 import { useStore } from '../Stores/store';
 import { observer } from 'mobx-react-lite';
-import { Route } from 'react-router-dom';
-import HomePage from '../../AppFeatures/activities/home/HomePage';
+import { Route, Switch, useLocation } from 'react-router-dom';
+import HomePage from '../../AppFeatures/home/HomePage';
 import ActivityForm from '../../AppFeatures/activities/form/ActivityForm';
+import ActivityDetails from '../../AppFeatures/activities/details/ActivityDetails';
+import TestErrors from '../../AppFeatures/ErrorHandling/TestErrors';
+import { ToastContainer } from 'react-toastify';
+import NotFound from '../../AppFeatures/ErrorHandling/NotFound';
+import ServerError from '../../AppFeatures/ErrorHandling/ServerError';
+import LoginForm from '../../AppFeatures/users/LoginForm';
+import ModalContainer from '../Utility/Modals/ModalContainer';
+import RegisterForm from '../../AppFeatures/users/RegisterForm';
 
 function App() {
-  const{activityStore}=useStore();//MobX to manage state
+  const {utilityStore, userStore} = useStore();
+  const location = useLocation();
 
-  useEffect(()=> {
-    activityStore.loadActivities();
-  }, [] ) //ensures only runs once; gets activities once to prevent infinite loop
+  useEffect(() =>{
+    if (utilityStore.token) { //if there is a token, get user and turn off loading flag
+      userStore.getUser().finally(() => utilityStore.setAppLoaded());
+    } else {
+      utilityStore.setAppLoaded()
+    }
+  },[utilityStore,userStore] )
 
+  if(!utilityStore.Loaded) return <LoadingComponent content="App Loading. . ."/>
 
-  if (activityStore.loadingInitial) return <LoadingComponent content='Loading. . .'/>
   
   return (
     <>
-      <NavBar/>
-      <Container style={{marginTop: '7em'}}>
-        <Route path='/' component={HomePage} />
-        <Route path='/activities' component={ActivityDashboard} />
-        <Route path='/createActivity' component={ActivityForm} />
+      <ToastContainer position='bottom-right' hideProgressBar /> <ModalContainer/>
+      <Route exact path='/' component={HomePage}/>
+      <Route 
+        path={'/(.+)'}
+        render={()=>(
+          <>
+            <NavBar/>
+            <Container style={{marginTop: '7em'}}>
+              <Switch>
+                <Route exact path='/activities' component={ActivityDashboard}/>
+                <Route path='/activities/:id' component={ActivityDetails}/>
+                <Route key={location.key} path={['/createActivity','/manage/:id']} component={ActivityForm}/>
+                <Route path='/ErrorHandling' component={TestErrors}/>
+                <Route path='/login' component={LoginForm}/>
+                <Route path='/register' component={RegisterForm}/>
 
-      </Container>
+
+                <Route path='/server-error' component={ServerError}/>
+                <Route component={NotFound}/>
+              </Switch>
+
+            </Container>
+          </>
+        )}
+      />
     </>
   );
 }

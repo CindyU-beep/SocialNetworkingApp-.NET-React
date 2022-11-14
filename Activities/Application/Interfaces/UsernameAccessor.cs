@@ -1,4 +1,5 @@
-namespace Application.Activities.Interfaces
+
+namespace Application.Interfaces
 {
     public interface UsernameAccessor
     {

@@ -1,7 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+
 
 namespace API.DataTransferObjects
 {
@@ -9,7 +6,6 @@ namespace API.DataTransferObjects
     {
         public string DisplayName {get; set;}
         public string ProfileImage {get; set;}
-
         public string Token {get; set;}
         public string Username {get; set;}
 

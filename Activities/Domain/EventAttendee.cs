@@ -5,13 +5,14 @@ using System.Threading.Tasks;
 
 namespace Domain
 {
-    public class Attendee
+    public class EventAttendee
     {
-        public string AppUserId {get;set;}
+        public string AppUserId {get; set;}
         public AppUser AppUser {get;set;}
         public Guid ActivityId {get;set;}
+
         public Activity Activity {get;set;}
-        public bool IsHost{get;set;}
+
+        public bool IsHosty {get;set;}
     }
-    
 }
