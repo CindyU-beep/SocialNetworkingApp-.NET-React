@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gs++Py+unG7m7IZRXr4KGUSHX5D2tTHz6P4Ya80R/t07Y8jFW9+mZMEMoxCp/KcErmPQBdogOci7LSATFRi0aQ==",
+  "dgSpecHash": "TZO+/n0zSbCMtxZpG1QH+SQiJW0pPZHzNsIy7AuNFsUODCXdG4mTSVMwTN0cLPEVanfzFG+e9fNzAKX12kJryw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\cindy\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\Application\\Application.csproj",
+  "projectFilePath": "C:\\Users\\cindy\\OneDrive\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\Application\\Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\cindy\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\cindy\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
@@ -43,7 +43,10 @@
     "C:\\Users\\cindy\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
     "C:\\Users\\cindy\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\cindy\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
-    "C:\\Users\\cindy\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512"
+    "C:\\Users\\cindy\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512",
+    "C:\\Users\\cindy\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.12\\microsoft.netcore.app.ref.6.0.12.nupkg.sha512",
+    "C:\\Users\\cindy\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.12\\microsoft.windowsdesktop.app.ref.6.0.12.nupkg.sha512",
+    "C:\\Users\\cindy\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.12\\microsoft.aspnetcore.app.ref.6.0.12.nupkg.sha512"
   ],
   "logs": []
 }

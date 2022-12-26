@@ -22,3 +22,15 @@ C:\Users\cindy\Desktop\FinalCopy\SocialNetworkingApp-.NET-React\Activities\Domai
 C:\Users\cindy\Desktop\FinalCopy\SocialNetworkingApp-.NET-React\Activities\Domain\obj\Debug\net6.0\refint\Domain.dll
 C:\Users\cindy\Desktop\FinalCopy\SocialNetworkingApp-.NET-React\Activities\Domain\obj\Debug\net6.0\Domain.pdb
 C:\Users\cindy\Desktop\FinalCopy\SocialNetworkingApp-.NET-React\Activities\Domain\obj\Debug\net6.0\ref\Domain.dll
+C:\Users\cindy\OneDrive\Documents\GitHub\SocialNetworkingApp-.NET-React\Activities\Domain\bin\Debug\net6.0\Domain.deps.json
+C:\Users\cindy\OneDrive\Documents\GitHub\SocialNetworkingApp-.NET-React\Activities\Domain\bin\Debug\net6.0\Domain.dll
+C:\Users\cindy\OneDrive\Documents\GitHub\SocialNetworkingApp-.NET-React\Activities\Domain\bin\Debug\net6.0\Domain.pdb
+C:\Users\cindy\OneDrive\Documents\GitHub\SocialNetworkingApp-.NET-React\Activities\Domain\obj\Debug\net6.0\Domain.csproj.AssemblyReference.cache
+C:\Users\cindy\OneDrive\Documents\GitHub\SocialNetworkingApp-.NET-React\Activities\Domain\obj\Debug\net6.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cindy\OneDrive\Documents\GitHub\SocialNetworkingApp-.NET-React\Activities\Domain\obj\Debug\net6.0\Domain.AssemblyInfoInputs.cache
+C:\Users\cindy\OneDrive\Documents\GitHub\SocialNetworkingApp-.NET-React\Activities\Domain\obj\Debug\net6.0\Domain.AssemblyInfo.cs
+C:\Users\cindy\OneDrive\Documents\GitHub\SocialNetworkingApp-.NET-React\Activities\Domain\obj\Debug\net6.0\Domain.csproj.CoreCompileInputs.cache
+C:\Users\cindy\OneDrive\Documents\GitHub\SocialNetworkingApp-.NET-React\Activities\Domain\obj\Debug\net6.0\Domain.dll
+C:\Users\cindy\OneDrive\Documents\GitHub\SocialNetworkingApp-.NET-React\Activities\Domain\obj\Debug\net6.0\refint\Domain.dll
+C:\Users\cindy\OneDrive\Documents\GitHub\SocialNetworkingApp-.NET-React\Activities\Domain\obj\Debug\net6.0\Domain.pdb
+C:\Users\cindy\OneDrive\Documents\GitHub\SocialNetworkingApp-.NET-React\Activities\Domain\obj\Debug\net6.0\ref\Domain.dll

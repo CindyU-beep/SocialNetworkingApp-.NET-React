@@ -13,6 +13,6 @@ namespace Domain
 
         public Activity Activity {get;set;}
 
-        public bool IsHosty {get;set;}
+        public bool IsHost {get;set;}
     }
 }

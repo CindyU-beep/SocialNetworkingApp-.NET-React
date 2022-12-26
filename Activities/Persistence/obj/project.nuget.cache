@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xBcukzuOu7cKE7WsIYHcbWEmE9EgpK9M3/fGa1+Wstd72LCIDP1nieOsRPKnim9/5gm6jBsmZtbLCCTOlNzsMA==",
+  "dgSpecHash": "FXhtXO01s/ykXphLKdwqD/VrN7PEXpxFAWpdVOboZ45w1FtM6S9n6E2GJ1KFhkugXsDtZIgo9rVyt7HXDbS0Kw==",
   "success": true,
-  "projectFilePath": "c:\\Users\\cindy\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\Persistence\\Persistence.csproj",
+  "projectFilePath": "C:\\Users\\cindy\\OneDrive\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\Persistence\\Persistence.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\cindy\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.0\\microsoft.aspnetcore.cryptography.internal.5.0.0.nupkg.sha512",
     "C:\\Users\\cindy\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\5.0.0\\microsoft.aspnetcore.cryptography.keyderivation.5.0.0.nupkg.sha512",
@@ -36,7 +36,10 @@
     "C:\\Users\\cindy\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
     "C:\\Users\\cindy\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\cindy\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
-    "C:\\Users\\cindy\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512"
+    "C:\\Users\\cindy\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512",
+    "C:\\Users\\cindy\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.12\\microsoft.netcore.app.ref.6.0.12.nupkg.sha512",
+    "C:\\Users\\cindy\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.12\\microsoft.windowsdesktop.app.ref.6.0.12.nupkg.sha512",
+    "C:\\Users\\cindy\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.12\\microsoft.aspnetcore.app.ref.6.0.12.nupkg.sha512"
   ],
   "logs": []
 }

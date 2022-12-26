@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\cindy\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\API\\API.csproj": {}
+    "C:\\Users\\cindy\\OneDrive\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\cindy\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\API\\API.csproj": {
+    "C:\\Users\\cindy\\OneDrive\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cindy\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\cindy\\OneDrive\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\cindy\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\API\\API.csproj",
+        "projectPath": "C:\\Users\\cindy\\OneDrive\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\API\\API.csproj",
         "packagesPath": "C:\\Users\\cindy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cindy\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\API\\obj\\",
+        "outputPath": "C:\\Users\\cindy\\OneDrive\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\cindy\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -26,11 +26,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\cindy\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\cindy\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\Application\\Application.csproj"
+              "C:\\Users\\cindy\\OneDrive\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\cindy\\OneDrive\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\Application\\Application.csproj"
               },
-              "c:\\Users\\cindy\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "c:\\Users\\cindy\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\Infrastructure\\Infrastructure.csproj"
+              "C:\\Users\\cindy\\OneDrive\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\cindy\\OneDrive\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }
@@ -99,6 +99,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.12, 6.0.12]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[6.0.12, 6.0.12]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.12, 6.0.12]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.12, 6.0.12]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -107,18 +125,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\cindy\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\Application\\Application.csproj": {
+    "C:\\Users\\cindy\\OneDrive\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cindy\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\Application\\Application.csproj",
+        "projectUniqueName": "C:\\Users\\cindy\\OneDrive\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Users\\cindy\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\Application\\Application.csproj",
+        "projectPath": "C:\\Users\\cindy\\OneDrive\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\cindy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cindy\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\Application\\obj\\",
+        "outputPath": "C:\\Users\\cindy\\OneDrive\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\cindy\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -133,11 +151,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\cindy\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\cindy\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\Domain\\Domain.csproj"
+              "C:\\Users\\cindy\\OneDrive\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\cindy\\OneDrive\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\Domain\\Domain.csproj"
               },
-              "c:\\Users\\cindy\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\Persistence\\Persistence.csproj": {
-                "projectPath": "c:\\Users\\cindy\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\Persistence\\Persistence.csproj"
+              "C:\\Users\\cindy\\OneDrive\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\Persistence\\Persistence.csproj": {
+                "projectPath": "C:\\Users\\cindy\\OneDrive\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\Persistence\\Persistence.csproj"
               }
             }
           }
@@ -176,23 +194,37 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.12, 6.0.12]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.12, 6.0.12]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.12, 6.0.12]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\cindy\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\Domain\\Domain.csproj": {
+    "C:\\Users\\cindy\\OneDrive\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cindy\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\cindy\\OneDrive\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\cindy\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Users\\cindy\\OneDrive\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\cindy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cindy\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\cindy\\OneDrive\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\cindy\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -235,23 +267,37 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.12, 6.0.12]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.12, 6.0.12]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.12, 6.0.12]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "c:\\Users\\cindy\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\Infrastructure\\Infrastructure.csproj": {
+    "C:\\Users\\cindy\\OneDrive\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\cindy\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\cindy\\OneDrive\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "c:\\Users\\cindy\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\Infrastructure\\Infrastructure.csproj",
+        "projectPath": "C:\\Users\\cindy\\OneDrive\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\Infrastructure\\Infrastructure.csproj",
         "packagesPath": "C:\\Users\\cindy\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\cindy\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\cindy\\OneDrive\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\cindy\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -266,8 +312,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\cindy\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\cindy\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\Application\\Application.csproj"
+              "C:\\Users\\cindy\\OneDrive\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\cindy\\OneDrive\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\Application\\Application.csproj"
               }
             }
           }
@@ -298,23 +344,37 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.12, 6.0.12]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.12, 6.0.12]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.12, 6.0.12]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "c:\\Users\\cindy\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\Persistence\\Persistence.csproj": {
+    "C:\\Users\\cindy\\OneDrive\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\Persistence\\Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\cindy\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\Persistence\\Persistence.csproj",
+        "projectUniqueName": "C:\\Users\\cindy\\OneDrive\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\Persistence\\Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "c:\\Users\\cindy\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\Persistence\\Persistence.csproj",
+        "projectPath": "C:\\Users\\cindy\\OneDrive\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\Persistence\\Persistence.csproj",
         "packagesPath": "C:\\Users\\cindy\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\cindy\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\Persistence\\obj\\",
+        "outputPath": "C:\\Users\\cindy\\OneDrive\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\cindy\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -329,8 +389,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\cindy\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\cindy\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\Domain\\Domain.csproj"
+              "C:\\Users\\cindy\\OneDrive\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\cindy\\OneDrive\\Documents\\GitHub\\SocialNetworkingApp-.NET-React\\Activities\\Domain\\Domain.csproj"
               }
             }
           }
@@ -361,12 +421,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.12, 6.0.12]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.12, 6.0.12]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.12, 6.0.12]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
